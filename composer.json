@@ -1,0 +1,36 @@
+{
+    "name": "twoh/twoh_content_blocks",
+    "type": "typo3-cms-extension",
+    "description": "Extension containing a list of basic TYPO3 Content Elements based on Content Blocks.",
+    "keywords": [
+        "TYPO3",
+        "extension",
+        "content",
+        "element"
+    ],
+    "license": "GPL-2.0+",
+    "authors": [
+        {
+            "name": "Andreas Reichel",
+            "role": "Developer",
+            "email": "a.reichel91@outlook.com"
+        }
+    ],
+    "version": "1.0.0",
+    "require": {
+        "php": ">=8.0",
+        "typo3/cms-core": "^12.4",
+        "composer-plugin-api": "^1.0 || ^2.0",
+        "contentblocks/content-blocks": "^0.4"
+    },
+    "require-dev": {
+        "roave/security-advisories": "dev-latest",
+        "composer/composer": "1.6.* || 2.0.*",
+        "composer/semver": "1.0.* || 2.0.*"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "twoh_content_blocks"
+        }
+    }
+}
