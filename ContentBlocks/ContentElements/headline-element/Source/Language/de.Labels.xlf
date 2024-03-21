@@ -25,7 +25,10 @@
 				<target>Abstand</target>
 			</trans-unit>
 			<trans-unit id="headlines.label">
-				<target>Überschriften</target>
+				<source>Überschriftengröße</source>
+			</trans-unit>
+			<trans-unit id="seoHeadlines.label">
+				<source>SEO Überschriften</source>
 			</trans-unit>
 			<trans-unit id="textColor.label">
 				<target>Textfarbe</target>

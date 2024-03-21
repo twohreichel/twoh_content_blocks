@@ -25,7 +25,10 @@
 				<source>Margin</source>
 			</trans-unit>
 			<trans-unit id="headlines.label">
-				<source>Headlines</source>
+				<source>Headline-Size</source>
+			</trans-unit>
+			<trans-unit id="seoHeadlines.label">
+				<source>SEO Headlines</source>
 			</trans-unit>
 			<trans-unit id="textColor.label">
 				<source>Textcolor</source>
