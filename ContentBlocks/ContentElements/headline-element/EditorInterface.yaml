@@ -45,6 +45,7 @@ fields:
     renderType: selectSingle
     size: 1
     itemsProcFunc: TWOH\TwohKickstarter\UserFunctions\AtomElementRenderer->renderHeadlineValues
+    default: 'h3'
 
   - identifier: upperCase
     type: Checkbox
