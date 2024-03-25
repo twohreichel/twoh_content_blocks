@@ -33,6 +33,9 @@
 			<trans-unit id="aspectRatio.label">
 				<source>Aspect Ratio</source>
 			</trans-unit>
+			<trans-unit id="imgWidth.label">
+				<source>Define Image width (in px)</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

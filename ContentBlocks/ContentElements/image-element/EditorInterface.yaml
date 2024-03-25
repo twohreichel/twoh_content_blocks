@@ -38,6 +38,9 @@ fields:
     itemsProcFunc: TWOH\TwohKickstarter\UserFunctions\AtomElementRenderer->renderAspectRatioValues
     default: '16 / 9'
 
+  - identifier: imgWidth
+    type: Text
+
   - identifier: media
     useExistingField: true
     allowed: common-image-types

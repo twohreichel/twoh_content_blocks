@@ -22,12 +22,23 @@
                                     media="(min-width: 768px)">
                             <source srcset="{f:uri.image(image: image, cropVariant: 'mobile')}"
                                     media="(max-width: 767px)">
-                            <!---Fallback--->
-                            <img class="{twoh:imageOrientation(imagePath: '{f:uri.image(image: image, maxWidth: settings.maxImgWidth)}')}  img-fluid"
-                                 src="{f:uri.image(image: image, maxWidth: settings.maxImgWidth, cropVariant: 'desktop')}"
-                                 alt="{image.alternative}" longdesc="{image.description}" title="{image.title}"
-                                 style="aspect-ratio: {data.aspectRatio}"
-                            >
+
+                            <f:if condition="{data.imgWidth}">
+                                <f:then>
+                                    <img class="{twoh:imageOrientation(imagePath: '{f:uri.image(image: image, maxWidth: settings.maxImgWidth)}')}  img-fluid"
+                                         src="{f:uri.image(image: image, maxWidth: settings.maxImgWidth, cropVariant: 'desktop')}"
+                                         alt="{image.alternative}" longdesc="{image.description}" title="{image.title}"
+                                         style="{f:if(condition: '{data.imgWidth} !== \'0\'', then: 'width: {data.imgWidth}px', else: 'width: 100%;height: auto;')}"
+                                    >
+                                </f:then>
+                                <f:else>
+                                    <img class="{twoh:imageOrientation(imagePath: '{f:uri.image(image: image, maxWidth: settings.maxImgWidth)}')}  img-fluid"
+                                         src="{f:uri.image(image: image, maxWidth: settings.maxImgWidth, cropVariant: 'desktop')}"
+                                         alt="{image.alternative}" longdesc="{image.description}" title="{image.title}"
+                                         style="{f:if(condition: '{data.aspectRatio} !== \'0\'', then: 'aspect-ratio: {data.aspectRatio}', else: 'width: 100%;height: auto;')}"
+                                    >
+                                </f:else>
+                            </f:if>
 
                             <f:if condition="{image.originalFile.properties.copyright}">
                                 <figcaption class="pt-2 {f:if(condition: data.copyright, then: '', else: 'd-none')}">

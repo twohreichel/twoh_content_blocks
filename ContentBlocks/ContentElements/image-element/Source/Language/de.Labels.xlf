@@ -33,6 +33,9 @@
 			<trans-unit id="aspectRatio.label">
 				<target>Seitenverhältnis</target>
 			</trans-unit>
+			<trans-unit id="imgWidth.label">
+				<target>Bildbreite definieren (in px)</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>
