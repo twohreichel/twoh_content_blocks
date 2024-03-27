@@ -1,12 +1,14 @@
-<f:if condition="{data.boxed}">
-    <f:then>
-        <div class="container">
-            <f:render section="content" />
-        </div>
-    </f:then>
-    <f:else>
-        <div class="container-fluid p-0">
-            <f:render section="content" />
-        </div>
-    </f:else>
-</f:if>
+<div id="c{data.uid}">
+    <f:if condition="{data.boxed}">
+        <f:then>
+            <div class="container">
+                <f:render section="content" />
+            </div>
+        </f:then>
+        <f:else>
+            <div class="container-fluid p-0">
+                <f:render section="content" />
+            </div>
+        </f:else>
+    </f:if>
+</div>
