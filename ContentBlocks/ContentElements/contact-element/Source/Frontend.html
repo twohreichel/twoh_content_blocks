@@ -19,15 +19,15 @@
         <f:for each="{contact.image}" as="image">
             <f:link.typolink parameter="{image.link}">
                 <picture class="image-component-picture">
-                    <source srcset="{f:uri.image(image: image, cropVariant: 'desktop')}"
+                    <source srcset="{f:uri.image(image: image, width: '250c', cropVariant: 'desktop')}"
                             media="(min-width: 992px)">
-                    <source srcset="{f:uri.image(image: image, cropVariant: 'tablet')}"
+                    <source srcset="{f:uri.image(image: image, width: '250c', cropVariant: 'tablet')}"
                             media="(min-width: 768px)">
-                    <source srcset="{f:uri.image(image: image, cropVariant: 'mobile')}"
+                    <source srcset="{f:uri.image(image: image, width: '250c', cropVariant: 'mobile')}"
                             media="(max-width: 767px)">
                     <!---Fallback--->
-                    <img class="{twoh:imageOrientation(imagePath: '{f:uri.image(image: image, maxWidth: settings.maxImgWidth)}')}  img-fluid"
-                         src="{f:uri.image(image: image, maxWidth: settings.maxImgWidth, cropVariant: 'desktop')}"
+                    <img class="{twoh:imageOrientation(imagePath: '{f:uri.image(image: image, maxWidth: settings.maxImgWidth)}')} mb-1 img-fluid w-50"
+                         src="{f:uri.image(image: image, width: '250c', cropVariant: 'desktop')}"
                          alt="{image.alternative}" longdesc="{image.description}" title="{image.title}"
                          style="aspect-ratio: {data.aspectRatio}"
                     >

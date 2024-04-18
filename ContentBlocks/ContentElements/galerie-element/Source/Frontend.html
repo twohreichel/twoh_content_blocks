@@ -20,15 +20,15 @@
 <f:section name="Image">
     <figure>
         <picture class="atom-image-picture">
-            <source srcset="{f:uri.image(image: image, cropVariant: 'desktop')}"
+            <source srcset="{f:uri.image(image: image, width: '400c', cropVariant: 'desktop')}"
                     media="(min-width: 992px)">
-            <source srcset="{f:uri.image(image: image, cropVariant: 'tablet')}"
+            <source srcset="{f:uri.image(image: image, width: '400c', cropVariant: 'tablet')}"
                     media="(min-width: 768px)">
-            <source srcset="{f:uri.image(image: image, cropVariant: 'mobile')}"
+            <source srcset="{f:uri.image(image: image, width: '350c', cropVariant: 'mobile')}"
                     media="(max-width: 767px)">
             <!---Fallback--->
             <img class="hover-shadow {twoh:imageOrientation(imagePath: '{f:uri.image(image: image, maxWidth: settings.maxImgWidth)}')} atom-image-picture-fal{f:if(condition: '{flexform.ratio} == \'left\'', then: '-float', else: '')} img-fluid"
-                 src="{f:uri.image(image: image, cropVariant: 'desktop')}"
+                 src="{f:uri.image(image: image, width: '400c', cropVariant: 'desktop')}"
                  alt="{image.alternative}" aria-description="{image.description}" title="{image.title}"
                  onclick="openModal(this);currentSlide(<f:format.raw>{iterator.cycle}</f:format.raw>)">
             <figcaption style="font-size: 1rem;">

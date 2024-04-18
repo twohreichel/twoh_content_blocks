@@ -12,7 +12,7 @@
     <f:if condition="{data.media}">
 
         <f:variable name="cropVariant" value="{f:if(condition: '{data._raw.pid} === 1', then: 'slider-home', else: 'slider-subpage')}" />
-        <f:variable name="cropVariantWidth" value="{f:if(condition: '{data._raw.pid} === 1', then: '', else: '1348c')}"></f:variable>
+        <f:variable name="cropVariantWidth" value="{f:if(condition: '{data._raw.pid} === 1', then: '1980c', else: '1348c')}"></f:variable>
         <f:variable name="cropVariantHeight" value="{f:if(condition: '{data._raw.pid} === 1', then: '', else: '480c')}"></f:variable>
 
         <f:for each="{data.media}" as="image">
