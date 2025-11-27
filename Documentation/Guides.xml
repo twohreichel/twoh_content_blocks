@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<guides xmlns="http://typo3.org/ns/typo3/guides"
+        title="TWOH Content Blocks"
+        version="1.0.5"
+        language="en-us">
+
+    <chapter id="introduction" title="Introduction">
+        <page>Introduction.rst</page>
+    </chapter>
+
+    <chapter id="installation" title="Installation">
+        <page>Installation.rst</page>
+    </chapter>
+
+    <chapter id="elements" title="Content Elements">
+        <page>Elements.rst</page>
+    </chapter>
+
+</guides>
