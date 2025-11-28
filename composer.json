@@ -37,8 +37,6 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-latest",
-        "composer/composer": "1.6.* || 2.0.*",
-        "composer/semver": "1.0.* || 2.0.*"
     },
     "extra": {
         "typo3/cms": {
