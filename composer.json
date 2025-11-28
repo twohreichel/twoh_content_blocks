@@ -21,7 +21,7 @@
             "email": "igor.smertin@web.de"
         }
     ],
-    "version": "1.0.5",
+    "version": "1.0.6",
     "config": {
         "allow-plugins": {
             "typo3/cms-composer-installers": true,
@@ -36,7 +36,7 @@
         "contentblocks/content-blocks": "^0.4"
     },
     "require-dev": {
-        "roave/security-advisories": "dev-latest",
+        "roave/security-advisories": "dev-latest"
     },
     "extra": {
         "typo3/cms": {
